@@ -1,0 +1,227 @@
+/*---------CUSTOMIZAÇÃO DO CORPO DA PÁGINA----------*/
+
+body {
+    margin: 0; /*retirar as margens da página*/
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /*suaviza o deslocamento da página*/
+}
+
+/*-----------------CUSTOMIZAÇÃO DO HEADER-------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between; /*adiciona um espaço entre o logo e os botões da navbar*/
+    align-items: center; /*faz o alinhamento dos itens na horizontal no centro da navbar*/
+    padding: 10px 15px 10px 15px; /*borda dos itens dentro do padding no sentido horário*/
+    background-color: rgb(0, 0, 0);
+}
+
+/*----------------CUSTOMIZAÇÃO DO LOGO DA NAVBAR--------------------*/
+
+.logoNav {
+    width: 170px; /*define o tamanho do logo*/
+}
+
+/*----------CUSTOMIZAÇÃO DOS BOTÕES DA NAVBAR-----------*/
+
+.nav_head ul {
+    padding-left: 0;
+    list-style: none; /*desabilita o estilo de lista*/
+    display: flex;
+    gap: 30px; /*espaçamento entre os botões da navbar*/
+}
+
+.nav_head a {
+    text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
+    color: white; /*font-weight: bold;*/
+    font-size: 18px;
+}
+
+.nav_head li a:hover {
+    color: #F20000;
+}
+
+/*------------------------CUSTOMIZAÇÃO BLOCO DE SERVIÇOS--------------------*/
+
+.bloco_servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 20px; /*espaçamento das bordas do bloco de serviços*/
+}
+
+.data {
+    font-size: 20px;
+}
+
+/*-------ajuste da div de serviços (não afeta a data)*/
+.servicos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*---------customização do titulo Produtos e descrição---------*/
+.servicos h2 {
+    display: flex;
+    align-items: center; /*alinha horizontalemnte no centro*/
+    gap: 5px; /*espaçamento entre o titulo e o emoji*/
+    margin: 0;
+}
+
+.servicos p {
+    text-align: center;
+}
+
+/*--------custimização da lista serviços--------*/
+
+.servicos ul {
+    display: flex;
+    gap: 40px;
+    list-style: none; /*desabilita as "bolinhas" da lista*/
+    padding-left: 0;
+    margin: 0;
+    cursor: pointer; /*altera o cursor ao passar por cima*/
+}
+
+.servicos ul a {
+    text-decoration: none; /*desabilita o estilo de "hiperlink"*/
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.servicos ul a:hover {
+    color: #ffffff; /*cor ao passar o cursor*/
+}
+
+.servicos li {
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+    background-color: #F20000;
+}
+
+.servicos li:hover {
+    transform: scale(1.1);
+}
+
+/*-----------------CUSTOMIZAÇÃO DO CONTAINER DE CARDS---------------------*/
+.container {
+    padding: 20px 20px 20px 20px; /*borda de todo container em relação a página*/
+}
+
+/*configuração do titulo das categorias do card*/
+.categoria_card {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.bloco_cards {
+    display: flex;
+    justify-content: center; /*alinha verticalmente no centro*/
+    align-items: center; /*alinha horizontalmente no centro*/
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/*customização do conteúdo textual do card*/
+.conteudo_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 5px 10px 5px;
+}
+
+.conteudo_card h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.conteudo_card span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00b30f;
+    text-align: center;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/*-------------------------CUSTOMIZAÇÃO DO FOOTER---------------------------*/
+
+footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 15px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 160px; /*tamanho da logo do footer*/
+    height: auto;
+}
+
+.rodape {
+    display: flex;
+    gap: 30px; /*espaçamento entre os links*/
+    flex-wrap: wrap;
+    margin-top: 20px; /*espaçamento entre a logo e os links */
+}
+
+.rodape a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px; /*tamanho da font dos links do footer*/
+    transition: color 0.3s linear;
+    gap: 8px; /*espaçamento entre os icones e os links*/
+}
+
+.rodape a:hover {
+    color: #F20000; /*cor ao passar o cursor nos links do footer*/
+}
+
+.icon-whats {
+    color: #25D366; /*Aplica cor no icone do Whatsapp*/
+}
+
+.icon-insta {
+    color: #E1306C; /*Aplica cor no icone do Instagram*/
+}

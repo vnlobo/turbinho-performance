@@ -1,0 +1,403 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="shortcut icon" href="img/color.png" type="image/x-icon"> -->
+    <title>Turbinho Produtos</title>
+
+    <script> //contém a configuração do pop-up ao acessar pág produtos e da data
+
+        alert("Confira nosso catálogo de peças 🔎"); //pop-up ao acessar a página
+
+        //configuração da data
+        data = new Date
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira")
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+
+        //função para abrir a pop dos produtos
+        function abrirInfo(nome, imagem, descricao) {
+            const url = `pop_produtos.html?nomeProd=${encodeURIComponent(nome)}&imagemProd=${encodeURIComponent(imagem)}&descricaoProd=${encodeURIComponent(descricao)}`
+            window.open(url, "_blank", "width=560,height=480")
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-----------------CABEÇALHO DA PÁGINA PRODUTOS-------------------->
+    <header>
+        <img src="img/logo2.png" class="logoNav">
+        <nav class="nav_head">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!---------------BLOCO DO MENU CONTENDO, LISTA DE PRODUTOS E DATA----------------->
+        <section class="bloco_servicos">
+            <!-------div da lista de serviços-------->
+            <div class="servicos">
+                <h2>Produtos</h2>
+                <p>Navegue através das nossas categorias e encontre o produto ideal para seu projetinho maroto.</p>
+                <ul>
+                    <li><a href="#manutencao">Manutenção</a></li>
+                    <li><a href="#performance">Perfomance</a></li>
+                    <li><a href="#kits">Kits Especiais</a></li>
+                </ul>
+            </div>
+            <!------------div da data-------------->
+            <div class="data">
+                <script>
+                    document.write(dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            </div>
+        </section>
+        <!---------------CONTAINER DOS CARDS----------------->
+        <section class="container">
+            <script>
+                // descrição dos stages
+                stg1 = "Aumento leve de potência e torque. Ideal para uso urbano sem alterar peças grandes."
+                stg2 = "Melhora fluxo de gases. Mais torque e potência, ideal para quem quer mais agressividade."
+                stg3 = "Suporta mais pressão. Ideal para preparação média."
+                stg4 = "Potência elevada. Exige ajuste fino."
+                stg5 = "Preparação completa. Indicado para pista, com alto ganho de desempenho."
+            </script>
+            <script>
+                // imagens dos sliders
+                slider_1 = ['img/img_cards/manutenção/01_oleo_motor_mobil1.png','img/pop/oleo_1.png','img/pop/oleo_2.png'];
+                slider_2 = ['img/img_cards/manutenção/02_filtro_oleo_mann.png','img/pop/filtro_oleo_1.png','img/pop/filtro_oleo_2.png'];
+                slider_3 = ['img/img_cards/manutenção/03_filtro_ar_fram.png','img/pop/filtro_ar_comum_1.png','img/pop/filtro_ar_comum_2.png'];
+                slider_4 = ['img/img_cards/manutenção/04_velas_ignicao_ngk.png','img/pop/velas_ignicao_1.png','img/pop/velas_ignicao_2.png'];
+                slider_5 = ['img/img_cards/manutenção/05_bobina_ignicao_bosch.png','img/pop/bobina_ignicao_1.png','img/pop/bobina_ignicao_2.png'];
+                slider_6 = ['img/img_cards/manutenção/06_cabos_vela_ngk.png','img/pop/cabos_vela_1.png','img/pop/cabos_vela_2.png'];
+                slider_7 = ['img/img_cards/manutenção/07_sensor_oxigenio_bosch.png','img/pop/sensor_oxigenio_1.png','img/pop/sensor_oxigenio_2.png'];
+                slider_8 = ['img/img_cards/manutenção/08_sensor_maf_bosch.png','img/pop/sensor_maf_1.png','img/pop/sensor_maf_2.png'];
+                slider_9 = ['img/img_cards/manutenção/09_bateria_moura.png','img/pop/bateria_1.png','img/pop/bateria_2.png'];
+                slider_10 = ['img/img_cards/manutenção/10_correia_dentada_gates.png','img/pop/correia_dentada_1.png','img/pop/correia_dentada_2.png'];
+                slider_11 = ['img/img_cards/manutenção/11_correia_auxiliar_poly_v_gates.png','img/pop/correia_poly_v_1.png','img/pop/correia_poly_v_2.png'];
+                slider_12 = ['img/img_cards/manutenção/12_bomba_agua_bosch.png','img/pop/bomba_dagua_1.png','img/pop/bomba_dagua_2.png'];
+                slider_13 = ['img/img_cards/manutenção/13_bomba_combustivel_bosch.png','img/pop/bomba_combustivel_1.png','img/pop/bomba_combustivel_2.png'];
+                slider_14 = ['img/img_cards/manutenção/14_disco_freio_brembo.png','img/pop/disco_freio_1.png','img/pop/disco_freio_2.png'];
+                slider_15 = ['img/img_cards/manutenção/15_pastilhas_freio_ferodo.png','img/pop/pastilhas_freio_1.png','img/pop/pastilhas_freio_2.png'];
+                slider_16 = ['img/img_cards/manutenção/16_sensor_abs_bosch.png','img/pop/sensor_abs_1.png','img/pop/sensor_abs_2.png'];
+                slider_17 = ['img/img_cards/manutenção/17_lampadas_automotivas_philips.png','img/pop/lampadas_automotivas_1.png','img/pop/lampadas_automotivas_2.png'];
+                slider_18 = ['img/img_cards/manutenção/18_rele_fusivel_bosch.png','img/pop/rele_fusiveis_1.png','img/pop/rele_fusiveis_2.png'];
+                slider_19 = ['img/img_cards/manutenção/19_reservatorio_expansao_generico.png','img/pop/reservatorio_expansao_1.png','img/pop/reservatorio_expansao_2.png'];
+                
+                slider_20 = ['img/img_cards/performance/20_filtro_ar_esportivo_k&n.png','img/pop/filtro_ar_esportivo_1.png','img/pop/filtro_ar_esportivo_2.png'];
+                slider_21 = ['img/img_cards/performance/21_turbina_garrett.png','img/pop/turbina_1.png','img/pop/turbina_2.png'];
+                slider_22 = ['img/img_cards/performance/22_intercooler_mishimoto.png','img/pop/intercooler_1.png','img/pop/intercooler_2.png'];
+                slider_23 = ['img/img_cards/performance/23_escape_esportivo_magnaflow.png','img/pop/escape_esportivo_1.png','img/pop/escape_esportivo_2.png'];
+                slider_24 = ['img/img_cards/performance/24_downpipe_inox.png','img/pop/downpipe_1.png','img/pop/downpipe_2.png'];
+                slider_25 = ['img/img_cards/performance/25_chip_potencia_racechip.png','img/pop/chip_potencia_1.png','img/pop/chip_potencia_2.png'];
+                slider_26 = ['img/img_cards/performance/26_boost_controller_fueltech.png','img/pop/booster_pressao_1.png','img/pop/booster_pressao_2.png'];
+                slider_27 = ['img/img_cards/performance/27_valvula_alivio_hks.png','img/pop/valvula_alivio_1.png','img/pop/valvula_alivio_2.png'];
+                slider_28 = ['img/img_cards/performance/28_bomba_combustivel_alta_pressao_walbro.png','img/pop/bomba_alta_pressao_1.png','img/pop/bomba_alta_pressao_2.png'];
+                slider_29 = ['img/img_cards/performance/29_embreagem_reforcada_act.png','img/pop/embreagem_reforcada_1.png','img/pop/embreagem_reforcada_2.png'];
+                slider_30 = ['img/img_cards/performance/30_bico_injetor_esportivo_injector_dynamics.png','img/pop/bico_injetor_esportivo_1.png','img/pop/bico_injetor_esportivo_2.png'];
+                slider_31 = ['img/img_cards/performance/31_velas_iridium_ngk.png','img/pop/velas_iridio_1.png','img/pop/velas_iridio_2.png'];
+                slider_32 = ['img/img_cards/performance/32_centralina_programavel_fueltech_ft550.png','img/pop/centralina_programavel_1.png','img/pop/centralina_programavel_2.png'];
+                slider_33 = ['img/img_cards/performance/33_radiador_oleo_mishimoto.png','img/pop/radiador_oleo_1.png','img/pop/radiador_oleo_2.png'];
+                
+                slider_34 = ['img/img_cards/kits_especiais/Stage_1.png','img/pop/kit_stage_1.png'];
+                slider_35 = ['img/img_cards/kits_especiais/Stage_2.png','img/pop/kit_stage_2.png'];
+                slider_36 = ['img/img_cards/kits_especiais/Stage_3.png','img/pop/kit_stage_3.png'];
+                slider_37 = ['img/img_cards/kits_especiais/Stage_4.png','img/pop/kit_stage_4.png'];
+                slider_38 = ['img/img_cards/kits_especiais/Stage_5.png','img/pop/kit_stage_5.png'];
+            </script>
+            <!----------------cards manutenção------------------->
+            <h2 class="categoria_card" id="manutencao">Manutenção</h2>
+            <div class="bloco_cards">
+                <div class="card" onclick="abrirInfo('Óleo', slider_1, 'Protege o motor, reduz atrito e melhora o desempenho.')">
+                    <img src="img/img_cards/manutenção/01_oleo_motor_mobil1.png">
+                    <div class="conteudo_card">
+                        <h2>Óleo</h2>
+                        <span>R$ 189,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Filtro de óleo', slider_2, 'Mantém o óleo limpo no motor.')">
+                    <img src="img/img_cards/manutenção/02_filtro_oleo_mann.png">
+                    <div class="conteudo_card">
+                        <h2>Filtro de óleo</h2>
+                        <span>R$ 39,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Filtro de ar comum', slider_3, 'Filtra o ar de entrada para o motor.')">
+                    <img src="img/img_cards/manutenção/03_filtro_ar_fram.png">
+                    <div class="conteudo_card">
+                        <h2>Filtro de ar comum</h2>
+                        <span>R$ 49,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Velas de ignição', slider_4, 'Responsáveis pela queima da mistura ar/combustível.')">
+                    <img src="img/img_cards/manutenção/04_velas_ignicao_ngk.png">
+                    <div class="conteudo_card">
+                        <h2>Velas de ignição</h2>
+                        <span>R$ 119,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Bobina de ignição', slider_5, 'Envia a voltagem necessária para as velas.')">
+                    <img src="img/img_cards/manutenção/05_bobina_ignicao_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Bobina de ignição</h2>
+                        <span>R$ 199,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Cabos de vela', slider_6, 'Conduzem energia elétrica às velas.')">
+                    <img src="img/img_cards/manutenção/06_cabos_vela_ngk.png">
+                    <div class="conteudo_card">
+                        <h2>Cabos de vela</h2>
+                        <span>R$ 89,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Sensor de oxigênio', slider_7, 'Mede a mistura ar/combustível.')">
+                    <img src="img/img_cards/manutenção/07_sensor_oxigenio_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Sensor de oxigênio</h2>
+                        <span>R$ 299,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Sensor MAF', slider_8, 'Mede o ar que entra no motor.')">
+                    <img src="img/img_cards/manutenção/08_sensor_maf_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Sensor MAF</h2>
+                        <span>R$ 349,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Bateria', slider_9, 'Fornece energia para dar partida e manter os sistemas do carro funcionando.')">
+                    <img src="img/img_cards/manutenção/09_bateria_moura.png">
+                    <div class="conteudo_card">
+                        <h2>Bateria</h2>
+                        <span>R$ 499,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Correia dentada', slider_10, 'Sincroniza o funcionamento do motor.')">
+                    <img src="img/img_cards/manutenção/10_correia_dentada_gates.png">
+                    <div class="conteudo_card">
+                        <h2>Correia dentada</h2>
+                        <span>R$ 149,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Correia auxiliar Poly V', slider_11, 'Move alternador, ar-condicionado, etc.')">
+                    <img src="img/img_cards/manutenção/11_correia_auxiliar_poly_v_gates.png">
+                    <div class="conteudo_card">
+                        <h2>Correia auxiliar (Poly V)</h2>
+                        <span>R$ 89,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Bomba d’água', slider_12, 'Faz a circulação do líquido de arrefecimento.')">
+                    <img src="img/img_cards/manutenção/12_bomba_agua_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Bomba d’água</h2>
+                        <span>R$ 199,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Bomba de combustível', slider_13, 'Envia combustível do tanque ao motor.')">
+                    <img src="img/img_cards/manutenção/13_bomba_combustivel_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Bomba de combustível</h2>
+                        <span>R$ 349,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Disco de freio', slider_14, 'Garante frenagens seguras com boa dissipação de calor.')">
+                    <img src="img/img_cards/manutenção/14_disco_freio_brembo.png">
+                    <div class="conteudo_card">
+                        <h2>Disco de freio</h2>
+                        <span>R$ 299,90 (par)</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Pastilhas de freio', slider_15, 'Oferecem frenagem precisa com desgaste controlado.')">
+                    <img src="img/img_cards/manutenção/15_pastilhas_freio_ferodo.png">
+                    <div class="conteudo_card">
+                        <h2>Pastilhas de freio</h2>
+                        <span>R$ 149,90 (jogo)</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Sensor ABS', slider_16, 'Monitora rotação da roda para o sistema ABS.')">
+                    <img src="img/img_cards/manutenção/16_sensor_abs_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Sensor ABS</h2>
+                        <span>R$ 199,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Lâmpadas automotivas', slider_17, 'Iluminação dos faróis e lanternas.')">
+                    <img src="img/img_cards/manutenção/17_lampadas_automotivas_philips.png">
+                    <div class="conteudo_card">
+                        <h2>Lâmpadas automotivas</h2>
+                        <span>R$ 59,90 (par)</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Relé e fusíveis', slider_18, 'Controlam e protegem os sistemas elétricos.')">
+                    <img src="img/img_cards/manutenção/18_rele_fusivel_bosch.png">
+                    <div class="conteudo_card">
+                        <h2>Relé e fusíveis</h2>
+                        <span>R$ 49,90 (kit)</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Reservatório de expansão', slider_19, 'Armazena o líquido do radiador.')">
+                    <img src="img/img_cards/manutenção/19_reservatorio_expansao_generico.png">
+                    <div class="conteudo_card">
+                        <h2>Reservatório de expansão</h2>
+                        <span>R$ 79,90</span>
+                    </div>
+                </div>
+            </div>
+            <!----------------cards performance------------------>
+            <h2 class="categoria_card" id="performance">Perfomance</h2>
+            <div class="bloco_cards">
+                <div class="card" onclick="abrirInfo('Filtro de ar esportivo', slider_20, 'Melhora fluxo de ar, aumenta potência.')">
+                    <img src="img/img_cards/performance/20_filtro_ar_esportivo_k&n.png">
+                    <div class="conteudo_card">
+                        <h2>Filtro de ar esportivo</h2>
+                        <span>R$ 399,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Turbina', slider_21, 'Aumenta pressão e desempenho do motor.')">
+                    <img src="img/img_cards/performance/21_turbina_garrett.png">
+                    <div class="conteudo_card">
+                        <h2>Turbina</h2>
+                        <span>R$ 2.990,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Intercooler', slider_22, 'Resfria o ar comprimido do turbo.')">
+                    <img src="img/img_cards/performance/22_intercooler_mishimoto.png">
+                    <div class="conteudo_card">
+                        <h2>Intercooler</h2>
+                        <span>R$ 1.290,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Escape esportivo', slider_23, 'Melhora fluxo de gases e som.')">
+                    <img src="img/img_cards/performance/23_escape_esportivo_magnaflow.png">
+                    <div class="conteudo_card">
+                        <h2>Escape esportivo</h2>
+                        <span>R$ 1.790,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Downpipe', slider_24, 'Substitui o catalisador por tubo direto.')">
+                    <img src="img/img_cards/performance/24_downpipe_inox.png">
+                    <div class="conteudo_card">
+                        <h2>Downpipe</h2>
+                        <span>R$ 790,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Chip de potência', slider_25, 'Ajusta a ECU para mais potência.')">
+                    <img src="img/img_cards/performance/25_chip_potencia_racechip.png">
+                    <div class="conteudo_card">
+                        <h2>Chip de potência</h2>
+                        <span>R$ 1.490,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Booster de pressão', slider_26, 'Controla pressão da turbina.')">
+                    <img src="img/img_cards/performance/26_boost_controller_fueltech.png">
+                    <div class="conteudo_card">
+                        <h2>Booster de pressão</h2>
+                        <span>R$ 499,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Válvula de alívio', slider_27, 'Libera pressão extra do turbo.')">
+                    <img src="img/img_cards/performance/27_valvula_alivio_hks.png">
+                    <div class="conteudo_card">
+                        <h2>Válvula de alívio</h2>
+                        <span>R$ 599,90</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Bomba de alta pressão', slider_28, 'Fornece combustível adequado em altas cargas.')">
+                    <img src="img/img_cards/performance/28_bomba_combustivel_alta_pressao_walbro.png">
+                    <div class="conteudo_card">
+                        <h2>Bomba de alta pressão</h2>
+                        <span>R$ 990,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Embreagem reforçada', slider_29, 'Suporta mais torque e rotação.')">
+                    <img src="img/img_cards/performance/29_embreagem_reforcada_act.png">
+                    <div class="conteudo_card">
+                        <h2>Embreagem reforçada</h2>
+                        <span>R$ 1.390,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Bico injetor esportivo', slider_30, 'Fornece mais combustível para motores preparados.')">
+                    <img src="img/img_cards/performance/30_bico_injetor_esportivo_injector_dynamics.png">
+                    <div class="conteudo_card">
+                        <h2>Bico injetor esportivo</h2>
+                        <span>R$ 1.290,00 (conj.)</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Velas de irídio', slider_31, 'Queima mais eficiente e durabilidade maior.')">
+                    <img src="img/img_cards/performance/31_velas_iridium_ngk.png">
+                    <div class="conteudo_card">
+                        <h2>Velas de irídio</h2>
+                        <span>R$ 249,90 (jogo)</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Centralina programável', slider_32, 'Permite ajustes completos no motor.')">
+                    <img src="img/img_cards/performance/32_centralina_programavel_fueltech_ft550.png">
+                    <div class="conteudo_card">
+                        <h2>Centralina programável</h2>
+                        <span>R$ 3.990,00</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Radiador de óleo', slider_33, 'Ajuda a controlar a temperatura do óleo.')">
+                    <img src="img/img_cards/performance/33_radiador_oleo_mishimoto.png">
+                    <div class="conteudo_card">
+                        <h2>Radiador de óleo</h2>
+                        <span>R$ 990,00</span>
+                    </div>
+                </div>
+            </div>
+            <!----------------cards kits especiais------------------>
+            <h2 class="categoria_card" id="kits">Kits Especiais</h2>
+            <div class="bloco_cards">
+                <div class="card" onclick="abrirInfo('Stage 1', slider_34, stg1)">
+                    <img src="img/img_cards/kits_especiais/Stage_1.png">
+                    <div class="conteudo_card">
+                        <h2>Stage 1</h2>
+                        <span>Consultar orçamento</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Stage 2', slider_35, stg2)">
+                    <img src="img/img_cards/kits_especiais/Stage_2.png">
+                    <div class="conteudo_card">
+                        <h2>Stage 2</h2>
+                        <span>Consultar orçamento</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Stage 3', slider_36, stg3)">
+                    <img src="img/img_cards/kits_especiais/Stage_3.png">
+                    <div class="conteudo_card">
+                        <h2>Stage 3</h2>
+                        <span>Consultar orçamento</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Stage 4', slider_37, stg4)">
+                    <img src="img/img_cards/kits_especiais/Stage_4.png">
+                    <div class="conteudo_card">
+                        <h2>Stage 4</h2>
+                        <span>Consultar orçamento</span>
+                    </div>
+                </div>
+                <div class="card" onclick="abrirInfo('Stage 5', slider_38, stg5)">
+                    <img src="img/img_cards/kits_especiais/Stage_5.png">
+                    <div class="conteudo_card">
+                        <h2>Stage 5</h2>
+                        <span>Consultar orçamento</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!----------------RODAPÉ------------------>
+    <footer>
+        <img src="img/logo2.png">
+        <div class="rodape">
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp icon-whats"></i>(11) 91234-5678</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram icon-insta"></i>turbinhoperformance</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/*---------CUSTOMIZAÇÃO DO CORPO DA PÁGINA----------*/
+
+body {
+    margin: 0; /*retirar as margens da página*/
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /*suaviza o deslocamento da página*/
+}
+
+/*-----------------CUSTOMIZAÇÃO DO HEADER-------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between; /*adiciona um espaço entre o logo e os botões da navbar*/
+    align-items: center; /*faz o alinhamento dos itens na horizontal no centro da navbar*/
+    padding: 10px 15px 0 15px; /*borda dos itens dentro do padding no sentido horário*/
+    background-color: rgb(0, 0, 0);
+}
+
+/*----------------CUSTOMIZAÇÃO DO LOGO DA NAVBAR--------------------*/
+
+.logoNav {
+    width: 170px; /*define o tamanho do logo*/
+}
+
+/*----------CUSTOMIZAÇÃO DOS BOTÕES DA NAVBAR-----------*/
+
+.nav_head ul {
+    padding-left: 0;
+    list-style: none; /*desabilita o estilo de lista*/
+    display: flex;
+    gap: 30px; /*espaçamento entre os botões da navbar*/
+}
+
+.nav_head a {
+    text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
+    color: white;
+    font-size: 18px;
+}
+
+.nav_head li a:hover {
+    color: #F20000;
+}
+
+/*----------------CUSTOMIZAÇÃO DO BANNER ANIMADO-------------------*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.banner img {
+    width: 95%;
+    height: auto;
+}
+
+/*----------------BORDA DO MAIN / CONTEÚDO DA PÁGINA--------------------*/
+main {
+    padding: 20px 20px 20px 20px;
+}
+
+/*-----------------CUSTOMIZAÇÃO DO SOBRE NÓS-------------------------*/
+
+.sobrenos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+    gap: 100px;
+}
+
+.img_sobrenos {
+    margin: 0;
+    width: 30%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.txt_sobrenos {
+    margin: 0;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.txt_sobrenos h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.txt_sobrenos p {
+    margin: 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*---------------------NOSSO ESTABELECIMENTO------------------------------*/
+
+.estabelecimento {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.estabelecimento h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.estabelecimento iframe {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*---------------------NOSSOS PRODUTOS------------------------*/
+
+.titulo_produtos h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px 0 20px 0;
+}
+
+.produtos img {
+    width: 32%;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 300ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.produtos img:hover {
+    opacity: 0.5;
+}
+
+.servicos h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.nav_produtos ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none; /*desabilita o estilo de lista*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px; /*espaçamento entre os botões*/
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.nav_produtos li {
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #F20000;
+}
+
+/*---------------------AJUSTES DO VIDEO----------------------------*/
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+.video iframe {
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*-------------------------CUSTOMIZAÇÃO DO FOOTER---------------------------*/
+
+footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 15px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 160px; /*tamanho da logo do footer*/
+    height: auto;
+}
+
+.rodape {
+    display: flex;
+    gap: 30px; /*espaçamento entre os links*/
+    flex-wrap: wrap;
+    margin-top: 20px; /*espaçamento entre a logo e os links */
+}
+
+.rodape a {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px; /*tamanho da font dos links do footer*/
+    text-decoration: none;
+    transition: color 0.3s linear;
+    gap: 8px; /*espaçamento entre os icones e os links*/
+}
+
+.rodape a:hover {
+    color: #F20000; /*cor ao passar o cursor nos links do footer*/
+}
+
+.icon-whats {
+    color: #25D366; /*Aplica cor no icone do Whatsapp*/
+}
+
+.icon-insta {
+    color: #E1306C; /*Aplica cor no icone do Instagram*/
+}
