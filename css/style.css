@@ -38,10 +38,14 @@ header {
     text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
     color: white;
     font-size: 18px;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition: 0.2s ease;
 }
 
 .nav_head li a:hover {
-    color: #F20000;
+    background-color: #F20000;
 }
 
 /*----------------CUSTOMIZAÇÃO DO BANNER ANIMADO-------------------*/

@@ -22,85 +22,85 @@
     </header>
     <!----------------------FORMULÁRIO DE CONTATO------------------------>
     <main>
-        <ul class="contatos-titulo"> <!-- mudar para formatação de titulo H2-->
-            <li class="contatos-item">Contatos</li>
-        </ul>
+        <h2 class="contatos-item">Fale Conosco 👨‍🔧</h2>
         <p>
-            Agradecemos seu apreço por nossos serviços. 
+            Agradecemos seu apreço por nossos serviços.
             Utilize o formulário abaixo para entrar em contato e solicitar um orçamento para seu projeto de preparação.
         </p>
         <form id="frmContatos">
             <fieldset>
-                <legend>Informações para orçamento</legend>
+                <section class="bloco_A">
+                    <div class="info_A">
+                        <label>Nome completo:</label>
+                        <input type="text" id="nome" required />
 
-                <label>Nome completo</label>
-                <input type="text" id="nome" required />
+                        <label>Celular:</label>
+                        <input type="text" id="celular" required />
 
-                <label>Celular</label>
-                <input type="text" id="celular" placeholder="(DDD) 00000-0000" required />
+                        <label>Email:</label>
+                        <input type="text" id="email" required />
+                    </div>
+                    <div class="info_B">
+                        <label>Marca:</label>
+                        <input type="text" id="marca" required />
 
-                <label>Email</label>
-                <input type="text" id="email" required />
+                        <label>Modelo:</label>
+                        <input type="text" id="modelo" required />
 
-                <label>Endereço</label>
-                <input type="text" id="endereco" required />
+                        <label>Ano do veículo:</label>
+                        <input type="text" id="ano_veiculo" required />
+                    </div>
+                </section>
 
-                <label>Marca</label>
-                <input type="text" id="marca"/>
+                <section class="bloco_B">
+                    <label>Qual objetivo do projeto?
+                        <select>
+                            <option>Selecione</option>
+                            <option>Uso diário</option>
+                            <option>Rua e Pista</option>
+                            <option>Competição</option>
+                            <option>Arrancada</option>
+                            <option>Exposição / Carro Show</option>
+                        </select>
+                    </label>
 
-                <label>Modelo</label>
-                <input type="text" id="modelo"/>
+                    <label>Qual nivel de preparação desejado?
+                        <select>
+                            <option>Selecione</option>
+                            <option>Stage 1</option>
+                            <option>Stage 2</option>
+                            <option>Stage 3</option>
+                            <option>Stage 4</option>
+                            <option>Stage 5</option>
+                        </select>
+                    </label>
+                </section>
 
-                <label>Ano do veículo</label>
-                <input type="text" id="ano_veiculo"/>
+                <div class="caixa_texto">
+                    <label>Observações</label>
+                    <textarea cols="70" rows="10"></textarea>
+                </div>
 
-                <label>Objetivo do projeto
-                    <select>
-                        <option>Selecione</option>
-                        <option>Uso diário</option>
-                        <option>Rua e Pista</option>
-                        <option>Competição</option>
-                        <option>Arrancada</option>
-                        <option>Exposição/Carro Show</option>
-                    </select>
-                </label>
+                <div class="contato_preferencia">
+                    <label>Qual meio de contato você prefere?
+                        <input type="radio" name="contato">E-mail
+                        <input type="radio" name="contato">Celular
+                        <input type="radio" name="contato">Whatsapp
+                    </label>
+                </div>
 
-                <label>Qual será o nivel de preparação desejado?
-                    <select>
-                        <option>Selecione</option>
-                        <option>Stage 1</option>
-                        <option>Stage 2</option>
-                        <option>Stage 3</option>
-                        <option>Stage 4</option>
-                        <option>Stage 5</option>
-                    </select>
-                </label>
+                <div class="email">
+                    <label>
+                        <input type="checkbox">Quer receber novidades por e-mail?
+                    </label>
+                </div>
 
-                <label>Informações extras</label>
-                <textarea cols="70" rows="10"></textarea>
-
-                <label>Como prefere ser contatado?
-                    <input type="radio" name="contato">E-mail
-                    <input type="radio" name="contato">Ligação
-                    <input type="radio" name="contato">Whatsapp
-                </label>
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
             </fieldset>
-            <label>
-                <input type="checkbox">Gostaria de receber novidades no e-mail?
-            </label>
-            <input type="submit" value="Enviar" class="enviar">
         </form>
     </main>
-    <!----------------RODAPÉ------------------>
-    <footer>
-        <img src="img/logo2.png">
-        <div class="rodape">
-            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp icon-whats"></i>(11)
-                91234-5678</a>
-            <a href="https://www.instagram.com/" target="_blank"><i
-                    class="fa-brands fa-instagram icon-insta"></i>turbinhoperformance</a>
-        </div>
-    </footer>
 </body>
 
 </html>

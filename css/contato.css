@@ -36,65 +36,150 @@ header {
 
 .nav_head a {
     text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
-    color: white; /*font-weight: bold;*/
+    color: white;
     font-size: 18px;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition: 0.2s ease;
 }
 
 .nav_head li a:hover {
-    color: #F20000;
+    background-color: #F20000;
 }
 
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+/*------------CORPO DA PÁGINA DE FORMULÁRIO--------------*/
 
-/*-------------------------CUSTOMIZAÇÃO DO FOOTER---------------------------*/
-
-footer {
+main {
     display: flex;
-    background-color: rgb(0, 0, 0);
-    padding: 10px 0 15px 0;
-    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
 }
 
-footer img {
-    width: 160px; /*tamanho da logo do footer*/
-    height: auto;
+main p {
+    text-align: center;
+    font-size: 18px;
 }
 
-.rodape {
-    display: flex;
-    gap: 30px; /*espaçamento entre os links*/
-    flex-wrap: wrap;
-    margin-top: 20px; /*espaçamento entre a logo e os links */
-}
-
-.rodape a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+/*-----------------CUSTOMIZAÇÃO FORMULÁRIO-----------------*/
+fieldset {
+    margin: 20px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
     color: rgb(255, 255, 255);
-    font-size: 20px; /*tamanho da font dos links do footer*/
-    transition: color 0.3s linear;
-    gap: 8px; /*espaçamento entre os icones e os links*/
+    background: #590006;
+    background: linear-gradient(147deg, rgba(89, 0, 6, 1) 0%, rgba(189, 0, 0, 1) 50%, rgba(89, 0, 6, 1) 100%);
 }
 
-.rodape a:hover {
-    color: #F20000; /*cor ao passar o cursor nos links do footer*/
+/*---------primeiro bloco do formulário-------------*/
+.bloco_A {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.icon-whats {
-    color: #25D366; /*Aplica cor no icone do Whatsapp*/
+.info_A {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
-.icon-insta {
-    color: #E1306C; /*Aplica cor no icone do Instagram*/
+.info_A input {
+    width: 125%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.info_B {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.info_B input {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+/*-----------segundo bloco do formulário-------------*/
+.bloco_B {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bloco_B label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.bloco_B select {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+/*--------------caixa de texto----------------*/
+.caixa_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.caixa_texto textarea {
+    border-radius: 5px;
+    border: none;
+}
+
+/*-------------div preferencia de contato---------------*/
+
+.contato_preferencia {
+    margin-bottom: 20px;
+}
+
+.contato_preferencia input {
+    border: none;
+    margin: 3px;
+}
+
+/*--------------div deseja recebar email-------------*/
+.email {
+    margin-bottom: 30px;
+}
+
+.email input {
+    margin: 3px;
+    border: none;
+}
+
+/*--------------botão enviar----------------*/
+
+.enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.enviar input {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px 35px 5px 35px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.enviar input:hover {
+    background-color: #F20000;
+    color: white;
+    transform: scale(1.1);
 }

@@ -36,12 +36,16 @@ header {
 
 .nav_head a {
     text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
-    color: white; /*font-weight: bold;*/
+    color: white;
     font-size: 18px;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition: 0.2s ease;
 }
 
 .nav_head li a:hover {
-    color: #F20000;
+    background-color: #F20000;
 }
 
 /*------------------------CUSTOMIZAÇÃO BLOCO DE SERVIÇOS--------------------*/
@@ -94,7 +98,7 @@ header {
 }
 
 .servicos ul a:hover {
-    color: #ffffff; /*cor ao passar o cursor*/
+    color: white; /*cor das palavras ao passar o cursor*/
 }
 
 .servicos li {
@@ -102,11 +106,13 @@ header {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.3s;
-    background-color: #F20000;
+    background-color: white;
 }
 
 .servicos li:hover {
     transform: scale(1.1);
+    background-color: #F20000;
+    color: white;
 }
 
 /*-----------------CUSTOMIZAÇÃO DO CONTAINER DE CARDS---------------------*/
