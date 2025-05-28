@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between; /*adiciona um espaço entre o logo e os botões da navbar*/
     align-items: center; /*faz o alinhamento dos itens na horizontal no centro da navbar*/
-    padding: 10px 15px 0 15px; /*borda dos itens dentro do padding no sentido horário*/
+    padding: 20px 25px 0 25px; /*borda dos itens dentro do padding no sentido horário*/
     background-color: rgb(0, 0, 0);
 }
 
@@ -28,6 +28,7 @@ header {
 /*----------CUSTOMIZAÇÃO DOS BOTÕES DA NAVBAR-----------*/
 
 .nav_head ul {
+    margin: 0;
     padding-left: 0;
     list-style: none; /*desabilita o estilo de lista*/
     display: flex;
@@ -37,7 +38,7 @@ header {
 .nav_head a {
     text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     background-color: black;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
