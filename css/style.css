@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
 /*---------CUSTOMIZAÇÃO DO CORPO DA PÁGINA----------*/
 
 body {
     margin: 0; /*retirar as margens da página*/
-    font-family: sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 html {
@@ -22,7 +24,7 @@ header {
 /*----------------CUSTOMIZAÇÃO DO LOGO DA NAVBAR--------------------*/
 
 .logoNav {
-    width: 170px; /*define o tamanho do logo*/
+    width: 200px; /*define o tamanho do logo*/
 }
 
 /*----------CUSTOMIZAÇÃO DOS BOTÕES DA NAVBAR-----------*/
@@ -38,7 +40,7 @@ header {
 .nav_head a {
     text-decoration: none; /*desabilita o estilo de "hiperlink" dos botões*/
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     background-color: black;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
@@ -75,14 +77,13 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0 0 20px 0;
-    gap: 100px;
+    gap: 50px;
 }
 
 .img_sobrenos {
     margin: 0;
-    width: 30%;
+    width: 32%;
     height: auto;
-    display: block;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
