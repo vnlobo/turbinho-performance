@@ -61,7 +61,7 @@ header {
 }
 
 .data {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*-------ajuste da div de serviços (não afeta a data)*/
@@ -82,7 +82,7 @@ header {
 
 .servicos p {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*--------custimização da lista serviços--------*/
@@ -94,6 +94,7 @@ header {
     padding-left: 0;
     margin: 0;
     cursor: pointer; /*altera o cursor ao passar por cima*/
+    font-size: 18px;
 }
 
 .servicos ul a {

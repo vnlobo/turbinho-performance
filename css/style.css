@@ -82,7 +82,7 @@ main {
 
 .img_sobrenos {
     margin: 0;
-    width: 32%;
+    width: 25%;
     height: auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -142,7 +142,7 @@ main {
 }
 
 .produtos img {
-    width: 32%;
+    width: 22%;
     border-radius: 5px;
     opacity: 1;
     transition: 300ms ease-in-out;
