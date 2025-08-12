@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+/*---------CUSTOMIZAÇÃO DO CORPO DA PÁGINA----------*/
+
+body {
+    margin: 0;
+    /*retirar as margens da página*/
+    font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
+    /*suaviza o deslocamento da página*/
+}
+
+/*-----------------CUSTOMIZAÇÃO DO HEADER-------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /*adiciona um espaço entre o logo e os botões da navbar*/
+    align-items: center;
+    /*faz o alinhamento dos itens na horizontal no centro da navbar*/
+    padding: 20px 25px 20px 25px;
+    /*borda dos itens dentro do padding no sentido horário*/
+    background-color: rgb(0, 0, 0);
+}
+
+/*----------------CUSTOMIZAÇÃO DO LOGO DA NAVBAR--------------------*/
+
+.logoNav {
+    width: 200px;
+    /*define o tamanho do logo*/
+}
+
+/*----------CUSTOMIZAÇÃO DOS BOTÕES DA NAVBAR-----------*/
+
+.nav_head ul {
+    padding-left: 0;
+    list-style: none;
+    /*desabilita o estilo de lista*/
+    display: flex;
+    gap: 30px;
+    /*espaçamento entre os botões da navbar*/
+}
+
+.nav_head a {
+    text-decoration: none;
+    /*desabilita o estilo de "hiperlink" dos botões*/
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.nav_head li a:hover {
+    background-color: #F20000;
+}
+
+/* título e descrição encomendas */
+main h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+main p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* tabela de encomendas */
+table {
+    table-layout: fixed;
+    width: 100%;
+    background-color: #ffb7b7;
+}
+
+tr, th {
+    padding: 5px;
+    margin: 0;
+    /* border: 1px solid #000000; */
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: #F20000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------CUSTOMIZAÇÃO DO FOOTER---------------------------*/
+
+footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 15px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 160px;
+    /*tamanho da logo do footer*/
+    height: auto;
+}
+
+.rodape {
+    display: flex;
+    gap: 30px;
+    /*espaçamento entre os links*/
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /*espaçamento entre a logo e os links */
+}
+
+.rodape a {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /*tamanho da font dos links do footer*/
+    text-decoration: none;
+    transition: color 0.3s linear;
+    gap: 8px;
+    /*espaçamento entre os icones e os links*/
+}
+
+.rodape a:hover {
+    color: #F20000;
+    /*cor ao passar o cursor nos links do footer*/
+}
+
+.icon-whats {
+    color: #25D366;
+    /*Aplica cor no icone do Whatsapp*/
+}
+
+.icon-insta {
+    color: #E1306C;
+    /*Aplica cor no icone do Instagram*/
+}
