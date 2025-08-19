@@ -71,20 +71,21 @@ main p {
 table {
     table-layout: fixed;
     width: 100%;
-    background-color: #ffb7b7;
+    background-color: #bebebe;
 }
 
 tr, th {
     padding: 5px;
     margin: 0;
-    /* border: 1px solid #000000; */
     text-align: center;
 }
 
 th {
     font-weight: bold;
-    background-color: #F20000;
+    background-color: #3b3b3b;
+    color: #ffffff;
 }
+
 
 
 
