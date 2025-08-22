@@ -14,37 +14,46 @@ for(var count=0; count<clientes.length; count++){
     var unit = clientes[count].querySelector(".unitario").textContent;
 
     // verifica se a quantidade é válida
-    if(qtde<1 || isNaN(qtde) || unit<=0 || isNaN(unit)){
+    if(qtde<1 || isNaN(qtde)){
         // a quant menor que 1 e não numérica
         clientes[count].querySelector(".qtde").textContent="Quantidade inválida";
-        clientes[count].querySelector(".unitario").textContent="-";
+        clientes[count].querySelector(".unitario").textContent="--";
 
-        // // deixa a palavra de erro em vermelho
+        // deixa a palavra de erro em vermelho
         // clientes[count].querySelector(".qtda").style.color="red";
         
-        // // deixa todo texto da linha em vermelho
+        // deixa todo texto da linha em vermelho
         // clientes[count].style.color="red";
 
         // deixa a linha inteira vermelha
         clientes[count].style.backgroundColor="red";
     }else{
-        // calcula e exibe o total
+        // calcula usando um função e exibe o total
         clientes[count].querySelector(".total").textContent = calcula_total(qtde, unit);
 
-        // envia formatacao pro valor unitario
-        clientes[count].querySelector(".unitario").textContent=formataValor(parseFloat(unit))
+        // envia formatação pro valor unitário
+        clientes[count].querySelector(".unitario").textContent=formataValor(parseFloat(unit));
     }
-
+    
+    // ------------------------------------------------------------------------
     // calculo do valor total
     // clientes[count].querySelector(".total").textContent = qtde * unit;
+    // ------------------------------------------------------------------------
 
-    // calculo total usando function
-    // clientes[count].querySelector(".total").textContent = calcula_total();
+    if(unit<1 || isNaN(unit)){
+        clientes[count].querySelector(".unitario").textContent="Quantidade inválida";
+        clientes[count].querySelector(".qtde").textContent="--";
 
+        // deixa todo texto da linha em vermelho
+        clientes[count].style.color="red";
+    }else{
+        clientes[count].querySelector(".total").textContent = calcula_total(qtde, unit);
+    }
 }
 
+// -----------------------------------------------------------------------------------------
 
-// função de calculo valor total
+// Função de calculo valor total
 function calcula_total(param_qtde, param_unit){
     var total = 0;
 
@@ -53,13 +62,7 @@ function calcula_total(param_qtde, param_unit){
     return formataValor(total);
 }
 
-// 1 fazer validacao unitaro
-// 2 fazer estizacao
-//  2.1 texto vermelho linha branca
-//  2.2 texto branco linha vermelha
-
-
-// FUNÇÃO Q FORMTA EM REAIS
+// Função para formatar valores em R$
 function formataValor(valor){
     var valor_formatado = valor.toLocaleString('pt-br', {style:'currency', currency:'BRL'});
 
