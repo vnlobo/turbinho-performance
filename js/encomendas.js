@@ -41,7 +41,7 @@ for(var count=0; count<clientes.length; count++){
     // ------------------------------------------------------------------------
 
     if(unit<1 || isNaN(unit)){
-        clientes[count].querySelector(".unitario").textContent="Quantidade inválida";
+        clientes[count].querySelector(".unitario").textContent="Valor inválido";
         clientes[count].querySelector(".qtde").textContent="--";
 
         // deixa todo texto da linha em vermelho
