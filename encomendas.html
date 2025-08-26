@@ -27,8 +27,9 @@
         <p>Acompanhe as encomendas abaixo.</p>
 
         <section class="container">
+            <h1>Lista de encomendas</h1>
             <!-- tabela das encomendas -->
-             <table>
+            <table>
                 <!-- cabeçalho tabela -->
                 <thead>
                     <tr>
@@ -40,7 +41,7 @@
                     </tr>
                 </thead>
                 <!-- corpo tabela -->
-                 <tbody id="tabela-clientes">
+                <tbody id="tabela-clientes">
                     <!-- linha produto 1 -->
                     <tr class="cliente">
                         <td class="nome">Zé</td>
@@ -73,8 +74,48 @@
                         <td class="unitario">X</td>
                         <td class="total"></td>
                     </tr>
-                 </tbody>
-             </table>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h1>Adicionar nova encomenda</h1>
+            <form class="adicionar-encomenda"> 
+                <div class="grupo1">
+                    <div class="bl_nome">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Digite o nome do(a) cliente" required>
+                    </div>
+
+                    <div class="bl_qtde">
+                        <label>Qtde</label>
+                        <input type="text" placeholder="Digite a quantidade encomenda" required>
+                    </div>
+
+                    <div class="bl_prodt">
+                        <label>Produto</label>
+                        <select>
+                            <option>Selecione</option>
+                            <option>a</option>
+                            <option>b</option>
+                            <option>c</option>
+                            <option>d</option>
+                            <option>e</option>
+                            <option>f</option>
+                            <option>g</option>
+                            <option>h</option>
+                            <option>i</option>
+                        </select>
+                    </div>
+
+                    <div class="bl_unit">
+                    <label>R$ Unitário</label>
+                    <input type="text" placeholder="Digite o valor unitário do produto" required>
+                </div>
+                </div>
+
+                <button id="adicionar" class="bt_adicionar">Adicionar</button>
+            </form>
         </section>
     </main>
     <!----------------RODAPÉ------------------>
@@ -88,6 +129,7 @@
         </div>
     </footer>
     <script src="js/encomendas.js"></script>
+    <script src="js/adicionar_encomenda.js"></script>
 </body>
 
 </html>

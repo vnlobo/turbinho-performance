@@ -67,11 +67,12 @@ main p {
     font-size: 18px;
 }
 
-/* tabela de encomendas */
+/* Tabela lista de encomendas */
+
 table {
     table-layout: fixed;
     width: 100%;
-    background-color: #bebebe;
+    background-color: #ffe9cd;
 }
 
 tr, th {
@@ -82,9 +83,57 @@ tr, th {
 
 th {
     font-weight: bold;
-    background-color: #3b3b3b;
+    background-color: #000000;
     color: #ffffff;
 }
+
+/* Destaque da informação inválida */
+.qtde-invalida {
+    background-color: red;
+    color: white;
+}
+
+.valor-invalido {
+    color: red;
+}
+
+
+/* Sessão Adicionar encomenda */
+
+.adicionar-encomenda{
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.grupo1 {
+    display: flex;
+    gap: 100px;
+}
+
+.bl_nome, .bl_qtde, .bl_prodt, .bl_unit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.bt_adicionar {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 
 
