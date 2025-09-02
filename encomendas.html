@@ -41,7 +41,7 @@
                     </tr>
                 </thead>
                 <!-- corpo tabela -->
-                <tbody id="tabela-clientes">
+                <tbody id="tabela-cliente">
                     <!-- linha produto 1 -->
                     <tr class="cliente">
                         <td class="nome">Zé</td>
@@ -80,38 +80,38 @@
 
         <section>
             <h1>Adicionar nova encomenda</h1>
-            <form class="adicionar-encomenda"> 
+            <form id="adicionar-encomenda" class="adicionar-encomenda">
                 <div class="grupo1">
                     <div class="bl_nome">
                         <label>Nome</label>
-                        <input type="text" placeholder="Digite o nome do(a) cliente" required>
+                        <input type="text"  name="nome" id="nome" placeholder="Digite o nome do(a) cliente" required>
                     </div>
 
                     <div class="bl_qtde">
                         <label>Qtde</label>
-                        <input type="text" placeholder="Digite a quantidade encomenda" required>
+                        <input type="number" placeholder="Digite a quantidade encomenda" required name="qtde" id="qtde">
                     </div>
 
                     <div class="bl_prodt">
                         <label>Produto</label>
-                        <select>
+                        <select name="produto" id="produto">
                             <option>Selecione</option>
-                            <option>a</option>
-                            <option>b</option>
-                            <option>c</option>
-                            <option>d</option>
-                            <option>e</option>
-                            <option>f</option>
-                            <option>g</option>
-                            <option>h</option>
-                            <option>i</option>
+                            <option>Velas de ignição</option>
+                            <option>Filtro de ar comum</option>
+                            <option>Bateria</option>
+                            <option>Filtro de óleo</option>
+                            <option>Óleo</option>
+                            <option>Reservatório de expansão</option>
+                            <option>Bomba de combustível</option>
+                            <option>Bomba d’água</option>
+                            <option>Pastilhas de freio</option>
                         </select>
                     </div>
 
                     <div class="bl_unit">
-                    <label>R$ Unitário</label>
-                    <input type="text" placeholder="Digite o valor unitário do produto" required>
-                </div>
+                        <label>R$ Unitário</label>
+                        <input type="text" placeholder="Digite o valor unitário do produto" required name="unitario" id="unitario">
+                    </div>
                 </div>
 
                 <button id="adicionar" class="bt_adicionar">Adicionar</button>

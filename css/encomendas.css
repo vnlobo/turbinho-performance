@@ -4,10 +4,7 @@
 
 body {
     margin: 0;
-    /*retirar as margens da página*/
     font-family: 'Exo 2', sans-serif;
-    scroll-behavior: smooth;
-    /*suaviza o deslocamento da página*/
 }
 
 /*-----------------CUSTOMIZAÇÃO DO HEADER-------------------*/
