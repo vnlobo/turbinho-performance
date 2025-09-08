@@ -7,6 +7,10 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 
+main {
+    margin: 20px;
+}
+
 /*-----------------CUSTOMIZAÇÃO DO HEADER-------------------*/
 
 header {
@@ -57,6 +61,7 @@ header {
 main h2 {
     text-align: center;
     font-size: 30px;
+    margin-top: 0;
 }
 
 main p {
@@ -97,10 +102,10 @@ th {
 
 /* Sessão Adicionar encomenda */
 
-.adicionar-encomenda{
+/* .adicionar-encomenda{
     margin-left: 20px;
     margin-bottom: 0;
-}
+} */
 
 .grupo1 {
     display: flex;
@@ -130,6 +135,12 @@ input, select {
     cursor: pointer;
 }
 
+/* efeito para linha sumir quando excluida */
+
+.fadeOut {
+    opacity: 0;
+    transition: 1s;
+}
 
 
 
