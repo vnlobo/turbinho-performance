@@ -142,10 +142,14 @@ input, select {
     transition: 1s;
 }
 
-/* filto */
-.filtragem {
+/* filtro */
+.busca {
     width: 14%;
     margin: 5px 0;
+}
+
+.invisivel {
+    display: none;
 }
 
 
