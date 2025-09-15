@@ -28,7 +28,6 @@
 
         <section class="container">
             <h1>Lista de encomendas</h1>
-            <hr>
 
             <!-- campo de busca com filtro -->
             <label>Filtrar</label>
@@ -87,22 +86,21 @@
         <section>
             <!-- sessão de adição de encomendas -->
             <h1>Adicionar nova encomenda</h1>
-            <hr>
             <form id="adicionar-encomenda" class="adicionar-encomenda">
                 <div class="grupo1">
                     <div class="bl_nome">
                         <label>Nome</label>
-                        <input type="text"  name="nome" id="nome" placeholder="Digite o nome do(a) cliente" required>
+                        <input type="text"  name="nome" id="nome" required placeholder="Digite o nome do(a) cliente"/>
                     </div>
 
                     <div class="bl_qtde">
                         <label>Qtde</label>
-                        <input type="number" placeholder="Digite a quantidade encomenda" required name="qtde" id="qtde">
+                        <input type="number" name="qtde" id="qtde" required placeholder="Digite a quantidade de encomendas"/>
                     </div>
 
                     <div class="bl_prodt">
                         <label>Produto</label>
-                        <select name="produto" id="produto">
+                        <select name="produto" id="produto" required>
                             <option>Selecione</option>
                             <option>Velas de ignição</option>
                             <option>Filtro de ar comum</option>
@@ -118,7 +116,7 @@
 
                     <div class="bl_unit">
                         <label>R$ Unitário</label>
-                        <input type="text" placeholder="Digite o valor unitário do produto" required name="unitario" id="unitario">
+                        <input type="text" name="unitario" id="unitario" required placeholder="Digite o valor unitário do produto"/>
                     </div>
                 </div>
 
